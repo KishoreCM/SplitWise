@@ -1,0 +1,542 @@
+.form {
+  border: 1px solid brown;
+  padding: 50px 50px;
+}
+
+.panel {
+  color: red;
+  text-align: center;
+  font-style: italic;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #5bc5a7;
+  z-index: 1;
+}
+
+.logoimg {
+  width: 108px;
+  height: 22px;
+}
+
+.dashboardBody {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: top;
+  border-top: 4px solid #000000;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+  opacity: 0.3;
+  margin-top: 10px;
+  margin-left: 4px;
+}
+
+#center_container {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  overflow: visible;
+  width: 960px;
+  margin: -33px auto 0;
+  padding: 0;
+}
+
+#centerpanel {
+  margin: 0 200px 0 200px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  min-height: 100%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+#leftpanel {
+  position: relative;
+  padding-top: 50px;
+  margin-left: -201px;
+  padding-right: 20px;
+  width: 180px;
+  z-index: 3;
+  float: left;
+  color: #999;
+}
+
+#view_options {
+  text-align: left;
+  width: 172px;
+  margin-left: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#leftpanel #view_options #dashboard_option {
+  margin: 11px 0 0;
+  padding: 3px 8px 5px 5px;
+  font-size: 16px;
+  line-height: 17px;
+  border-left: 6px solid #5bc5a7;
+  color: #5bc5a7;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#leftpanel #view_options a.open {
+  border-left: 6px solid #5bc5a7;
+  color: #5bc5a7;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#leftpanel #view_options a:hover {
+  background-color: rgb(209, 209, 209);
+}
+
+#leftpanel #view_options .header {
+  position: relative;
+  margin-left: 5px;
+  background: #f6f6f6;
+  color: #ccc;
+  font-size: 11px;
+  margin-top: 5px;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #eee;
+  padding: 0 5px;
+}
+
+#leftpanel #view_options .header a {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  display: inline;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  text-transform: lowercase;
+}
+
+#leftpanel #view_options a {
+  color: inherit;
+  display: block;
+  height: 19px;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 3px 8px 2px 8px;
+  text-decoration: none;
+  border-left: 6px solid #fff;
+}
+
+.group_tags {
+  margin-top: 50px;
+}
+
+#leftpanel #view_options .group_tags .header a:hover {
+  color: blue;
+}
+
+#leftpanel #view_options .group_tags .group_name {
+  cursor: pointer;
+  height: 30px;
+}
+
+#rightpanel {
+  position: relative;
+  padding-top: 33px;
+  margin-right: -201px;
+  padding-left: 24px;
+  width: 176px;
+  z-index: 3;
+  float: right;
+  color: #999;
+}
+
+#group_balances.active {
+  margin-top: 50px;
+  color: inherit;
+  display: block;
+}
+
+.name {
+  margin-top: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: black;
+  padding-top: 10px;
+}
+
+.members:hover {
+  cursor: pointer;
+  background-color: rgb(209, 209, 209);
+}
+
+.personal_balance {
+  margin-top: 0px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+#centercolumn {
+  position: relative;
+  margin: 0;
+  padding-top: 33px;
+  min-height: auto;
+}
+
+.topbar {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 9;
+  background: #eee;
+  border-bottom: none;
+  padding: 13px 10px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.topbar .actions {
+  position: absolute;
+  top: 0px;
+  left: 380px;
+  display: inline-block;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.expense {
+  background-color: #ff652f;
+  color: white;
+}
+
+.expense:hover {
+  background-color: rgb(204, 73, 25);
+}
+
+.settleup {
+  background-color: #5bc5a7;
+  color: white;
+}
+
+.settleup:hover {
+  background-color: rgb(13, 148, 110);
+}
+
+#expenseslist {
+  padding: 0 0 10px;
+}
+
+#no_expense_desc {
+  margin-top: 30px;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.no_expense_toy {
+  position: relative;
+  top: 0;
+  left: 65px;
+  width: 150px;
+}
+
+.no_expense_content {
+  text-align: left;
+  padding-left: 235px;
+}
+
+.sub_content {
+  margin-top: 15px;
+  color: #999;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.add_expense {
+  position: relative;
+}
+
+.add_expense > .summary .add_expense {
+  border-bottom: 1px solid #eee;
+}
+
+.add_expense div.main-block {
+  cursor: pointer;
+  display: inline-block;
+  width: 307px;
+  padding: 9px 5px 6px 68px;
+  position: relative;
+}
+
+.add_expense div.main-block div.date {
+  float: left;
+  margin: -1px 10px 0 -65px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999;
+  font-weight: normal;
+}
+
+.add_expense div.main-block div.date {
+  float: left;
+  margin: -1px 10px 0 -65px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999;
+  font-weight: normal;
+}
+
+.add_expense div.main-block div.date div.number {
+  margin-top: -3px;
+  font-size: 20px;
+}
+
+.add_expense div.main-block > .header_name {
+  font-size: 16px;
+  font-weight: bold;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 40px;
+  margin-top: 0px;
+}
+
+.add_expense div.main-block > .header_name.header_description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 9px;
+  max-width: 200px;
+  min-width: 150px;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.expense div.main-block > .header_name .header_description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 9px;
+  max-width: 200px;
+  min-width: 150px;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.add_expense > div.cost {
+  text-align: right;
+  width: 100px;
+  padding: 11px 10px 12px 5px;
+  font-size: 12px;
+  line-height: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: top;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.add_expense > div.cost .number {
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.add_expense div.you {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  padding: 11px 4px 12px;
+  font-size: 12px;
+  width: 127px;
+  color: #aaa;
+  line-height: 15px;
+}
+
+.add_expense div.you .positive {
+  color: #5bc5a7;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.add_expense div.delete_actions {
+  display: none;
+  vertical-align: top;
+  padding-top: 9px;
+  font-size: 12px;
+  width: 0px;
+}
+
+.add_expense > .summary .add_expense:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.add_expense:hover .delete_actions {
+  display: block;
+  cursor: pointer;
+}
+
+.add_expense div.delete_actions a.delete {
+  color: #c00;
+  font-weight: bold;
+  font-size: 24px;
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  padding: 5px;
+}
+
+#rightpanel .personal_balance.i_owe {
+  color: #ff652f;
+}
+
+.amount {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#rightpanel .personal_balance.owes_me {
+  color: #5bc5a7;
+}
+
+/*
+.navbar {
+  font-size: 14px;
+}
+
+.navbar-fixed-top {
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  margin-bottom: 0;
+}
+
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  margin-bottom: 0;
+}
+
+.navbar {
+  color: #ffffff;
+}
+
+.navbar-fixed-top .navbar-inner,
+.navbar-fixed-bottom .navbar-inner {
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+}
+
+.navbar-inner {
+  border-bottom: 1px solid #48be9d;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-inner {
+  min-height: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #5bc5a7;
+  background-image: linear-gradient(to .navbar-fixed-bottom #5bc5a7, #5bc5a7);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc5a7', endColorstr='#5bc5a7', GradientType=0);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+  box-sizing: border-box;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  min-width: 980px;
+}
+
+.container:before,
+.container:after {
+  display: table;
+  content: "";
+}
+
+.navbar .brand {
+  padding: 4px 20px 2px;
+  width: 165px;
+}
+
+.navbar .nav.pull-right {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.navbar .nav.pull-right {
+  float: right;
+}
+.nav.pull-right {
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+.navbar .nav {
+  height: 33px;
+}
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+}
+.pull-right {
+  float: right;
+}
+.nav {
+  list-style: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 9px 25px;
+}
+
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+*/
